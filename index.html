@@ -5,31 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-WMlUTfo0.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/rolldown-runtime-QTnfLwEv.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-fzEegEpZ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-Cq1ckM7T.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CTqY82xf.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a class="nav-logo" href="./index.html" aria-label="Site logo">
-            <svg class="nav-logo-icon" width="100" height="30">
-              <use href="/goit-js-hw-11/assets/logo-CWKflIk4.svg"></use>
-            </svg>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-form.html"
-                >Form</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <main>
+      <form class="form">
+        <label>
+          <input
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="loader is-hidden"></div>
+
+      <ul class="gallery"></ul>
+    </main>
   </body>
 </html>
